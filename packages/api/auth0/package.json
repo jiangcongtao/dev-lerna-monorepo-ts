@@ -1,0 +1,30 @@
+{
+  "name": "@nick/auth0",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "run-s clean build:tsc",
+    "build:tsc": "tsc -b",
+    "clean": "rimraf lib coverage tsconfig.tsbuildinfo",
+    "start": "node lib/index.js",
+    "start:dev": "nodemon"
+  },
+  "dependencies": {
+    "@nick/api-common": "^1.0.0",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "express-jwt-authz": "^2.3.1",
+    "jwks-rsa": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "nodemon": "^2.0.2"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.api-base.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "paths": {
+      "@nick/api-common": ["../api-common/src"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/__tests__/*", "**/__e2e__/*"],
+  "references": [{ "path": "../api-common" }]
+}

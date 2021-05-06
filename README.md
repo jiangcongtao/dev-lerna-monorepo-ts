@@ -1,0 +1,1 @@
+https://medium.com/@dandobusiness/setting-up-typescript-in-a-mono-repo-cd49a38d6030
