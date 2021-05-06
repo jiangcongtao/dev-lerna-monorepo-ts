@@ -11,7 +11,7 @@
     ]
   },
   "scripts": {
-    "build": "run-p clean run-s build:api",
+    "build": "run-p clean && run-s build:api",
     "build:api": "tsc -b ./packages/tsconfig.api-base.json",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna run --parallel clean",
